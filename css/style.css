@@ -2,19 +2,23 @@ body {
 	color: #555;
 	font:300 15px/1.8 "Open Sans", Arial, sans-serif;
 }
-h2, h3 {
+h2, h3, h4 {
 	text-transform: uppercase;
 	font-weight: 400;
 	line-height: 1.6;
 	padding-bottom: 20px;
 }
 h2 {
-	font-size: 26px;
+	font-size: 38px;
+	font-weight: 700;
 }
 h3 {
+	font-size: 26px;
+}
+h4 {
 	font-size: 23px;
 }
-a {
+a, img {
 	-webkit-transition: color .2s ease-in, background-color .3s ease-in, border .3s ease-in;
 	   -moz-transition: color .2s ease-in, background-color .3s ease-in, border .3s ease-in;
 	    -ms-transition: color .2s ease-in, background-color .3s ease-in, border .3s ease-in;
@@ -24,9 +28,26 @@ a {
 .bg-gray {
 	background-color: #F2F2F2;
 }
+.bg-green {
+	background-color: #82b440;
+	color: #fff;
+}
+.bg-dark-gray {
+	background-color: #222;
+}
+.thin-heading {
+	font-weight: 300;
+	text-transform: none;
+}
+.headings h2, .headings{
+	padding-bottom: 30px;
+}
 .container {
 	width: 960px;
 	margin: auto;
+}
+.center {
+	text-align: center;
 }
 .header_top {
 	background: url('../img/banner.jpg') no-repeat 50% 0;
@@ -117,5 +138,75 @@ a {
 }
 p+.button {
 	margin-top: 25px;
-	overflow: hidden;
+}
+.headings+.button {
+	border: 2px solid #f2f2f2;
+	color:#f2f2f2;
+	background-color: #82b440;
+}
+.headings+.button:hover {
+	color: #82b440;
+	background-color: #f2f2f2;
+}
+.blocks h2, .persons h2, .socials h2 {
+	padding-bottom: 5px;
+}
+.blocks h4, .persons h4, .socials h4 {
+	font-size: 21px;
+	font-weight: 300;
+	padding-bottom: 40px;
+}
+.blocks li {
+	float: left;
+	width: 32%;
+	margin-right: 2%;
+	margin-bottom: 40px;
+}
+.blocks li:nth-child(3n) {
+	margin-right: 0;
+}
+.blocks li h5, .persons li h5 {
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+.blocks li h5, .blocks li p {
+	text-align: left;
+}
+.blocks .fa {
+	display: inline-block;
+	float: left;
+	color: #82b440;
+	padding-right: 15px;
+	font-size: 22px;
+	line-height: 32px;
+}
+.persons li {
+	float: left;
+	width: 23%;
+	margin-right: 2%;
+}
+.persons li a img {
+	border-radius: 50%;
+	border: 10px solid;
+	border-color: #fff;
+}
+.persons li a {
+	display: inline-block;
+	padding-bottom: 30px;
+}
+.persons li a:hover img {
+	border-color: #b9b9b9;
+}
+.socials h2 {
+	color: #fff;
+}
+.socials a {
+	color: #555;
+	display: inline-block;
+	font-size: 29px;
+	padding: 0 15px;
+}
+.socials a:hover{
+	color:#fff;
 }
